@@ -4,7 +4,7 @@ function! highlightedyank#constant#import(...) abort "{{{
   if a:0 >= 1
     let const = s:const
     if a:0 >= 2
-      let const = filter(deepcopy(s:const), 'match(a:2, v:key) > -1')
+      let const = filter(deepcopy(s:const), 'count(a:2, v:key) > 0')
       lockvar! const
     endif
     call extend(a:1, const)
