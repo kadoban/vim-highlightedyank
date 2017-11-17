@@ -63,6 +63,15 @@ If both of those variables are not assigned, it gives up over 10000 lines.
 
 
 
+|g:highlightedyank_timeout| and |b:highlightedyank_timeout| enables to set a
+threshold time to give up highlighting. The following line in vimrc make this
+plugin to give up over 500 milliseconds = 0.5 seconds.
+>
+	let g:highlightedyank_timeout = 500
+<
+If both of those variables are not assigned, it gives up over 1 second (1000
+milliseconds).
+
 ==============================================================================
 HIGHLIGHT GROUPS			*highlightedyank-highlight-groups*
 

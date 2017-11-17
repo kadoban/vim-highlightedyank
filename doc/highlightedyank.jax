@@ -59,6 +59,17 @@ INTRODUCTION				*highlightedyank-introduction*
 これらが明示的に指定されていない場合は、 10000 行を超える場合にハイライトをし
 ません。
 
+
+
+|g:highlightedyank_timeout| と |b:highlightedyank_timeout| を使い、ハイライト
+に指定された以上の時間がかかった場合、処理を中止させることができます。以下の例
+ではハイライトに 500 ミリ秒 = 0.5 秒以上かかった場合に処理を中止させます。
+>
+	let g:highlightedyank_timeout = 500
+<
+これらが明示的に指定されていない場合は、 1秒 (1000 ミリ秒) を超える場合にハイ
+ライトをしません。
+
 ==============================================================================
 HIGHLIGHT GROUPS			*highlightedyank-highlight-groups*
 
